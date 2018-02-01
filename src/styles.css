@@ -1,0 +1,84 @@
+body {
+  background-image: url(img/body-background.png);
+}
+.header{
+  margin: 1em 0;
+  min-width: 170px;
+  background-color: bisque;
+  border-radius: .3em;
+  color: Crimson;
+  text-align: center;
+  box-shadow: 0 0 1em silver;
+}
+.header h3{
+  line-height: 2em;
+}
+.menu-link{
+  /*height: 2em;*/
+  padding:1em;
+  width: 100%;
+  background-color: DarkGreen;
+  border-radius: .3em;
+}
+.menu-link-list{
+  list-style: none;
+  margin:0;
+  padding-left: 0;
+  text-align: center;
+}
+.menu-link-list li{
+  font-size: 1.2em;
+  display: inline;
+  padding: 1em .3em;
+  margin-right: 1em;
+}
+.menu-link-list li:hover{
+  background: white;
+/*  border-radius: 5em;*/
+}
+.menu-link-list li a, .menu-link-list li a:hover{
+  text-decoration: none;
+}
+.menu-link-list li a{
+  color:bisque;
+}
+.menu-link-list li:hover a{
+  color:saddlebrown;
+}
+.map-navbar{
+    margin: 0 auto;
+    text-align: center;
+}
+.map-navbar p{
+  text-align: center;
+}
+.map-navbar iframe{
+  width: 100%;
+  min-width: 10em;
+  min-height: 50vh;
+  margin-top: -1em;
+}
+.toggler-map{
+  margin: 1em auto;
+  width: 11%;
+  min-width: 8em;
+  height: 2em;
+  line-height: 2em;
+  border: 1px dotted grey;
+  border-radius: 1em;
+  text-align: center;
+  background-color: ghostwhite;
+}
+.toggler-map-shown{
+  background-color: bisque;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom:none;
+  width: 66%;
+}
+.content{
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: rgb(250,250,250);
+  border-radius: 1em;
+}
