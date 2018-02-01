@@ -1,7 +1,7 @@
 {
   "name": "some-realty-state",
   "version": "1.0.0",
-  "description": "QuickStart package.json from the documentation, supplemented with testing support",
+  "description": "startin with angular2",
   "scripts": {
     "build": "tsc -p src/",
     "build:watch": "tsc -p src/ -w",
