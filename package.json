@@ -21,7 +21,7 @@
     "lint": "tslint ./src/**/*.ts -t verbose"
   },
   "keywords": [],
-  "author": "",
+  "author": "budnij_den",
   "license": "MIT",
   "dependencies": {
     "@angular/common": "~4.3.4",
@@ -61,5 +61,6 @@
   "engines": {
     "node": ">=6.11",
     "npm": ">=3.10"
-  }
+  },
+  "main": "karma-test-shim.js"
 }
