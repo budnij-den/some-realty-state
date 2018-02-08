@@ -1,12 +1,10 @@
 import { Component, Input } from '@angular/core';
 
-
-
 @Component({
-  selector: 'main',
-  templateUrl: './app.component.html',
+  selector: 'map',
+  templateUrl: './map.component.html',
 })
-export class AppComponent {
+export class MapComponent {
   toggled:boolean=false;
   textTogglerMap:string='show map';
 
