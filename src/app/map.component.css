@@ -61,8 +61,8 @@
 .map-slider{
   width: 66%;
   margin: auto;
-/*  min-width: 10em;
-  min-height: 50vh;*/
+/*  min-width: 10em;*/
+  
   margin-top: -1em;
   background: lightgrey;
   /*animation: map-slider 1s;*/
@@ -73,5 +73,5 @@
   width: 100%;
   animation: map-slider 1s;
   height: 30vh;
-
+  min-height: 10vh;
 }
