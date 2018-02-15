@@ -22,13 +22,13 @@
 /*    border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;*/
     /*border-bottom:none;*/
-    width: 66%;
+    width: 60%;
   }
 }
 @keyframes toggler-map{
   from{
     background-color: bisque;
-    width: 66%;
+    width: 60%;
   }
   to{
     width: 11%;
@@ -46,7 +46,7 @@
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   border-bottom:none;
-  width: 66%;
+  width: 60%;
   animation: toggler-map-shown .7s;
 }
 
@@ -59,7 +59,7 @@
   }
 }
 .map-slider{
-  width: 66%;
+  width: 60%;
   margin: auto;
 /*  min-width: 10em;*/
   
@@ -73,5 +73,5 @@
   width: 100%;
   animation: map-slider 1s;
   height: 30vh;
-  min-height: 10vh;
+  /*min-height: 10vh;*/
 }
