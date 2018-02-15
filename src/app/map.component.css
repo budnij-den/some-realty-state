@@ -1,0 +1,77 @@
+
+.map-navbar{
+    margin: 0 auto;
+    text-align: center;
+}
+.toggler{
+  margin: 1em auto;
+  min-width: 8em;
+  height: 2em;
+  line-height: 2em;
+  border: 1px dotted grey;
+  text-align: center;
+}
+@keyframes toggler-map-shown{
+  from{
+    width: 11%;
+    /*border-radius: 1em;*/
+    background-color: ghostwhite;
+  }
+  to{
+    background-color: bisque;
+/*    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;*/
+    /*border-bottom:none;*/
+    width: 66%;
+  }
+}
+@keyframes toggler-map{
+  from{
+    background-color: bisque;
+    width: 66%;
+  }
+  to{
+    width: 11%;
+    background-color: ghostwhite;
+  }
+}
+.toggler-map{
+  width: 11%;
+  border-radius: 1em;
+  background-color: ghostwhite;
+  animation: toggler-map .3s;
+}
+.toggler-map-shown{
+  background-color: bisque;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom:none;
+  width: 66%;
+  animation: toggler-map-shown .7s;
+}
+
+@keyframes map-slider{
+  from {
+    height: 0;
+  }
+  to {
+    height: 30vh;
+  }
+}
+.map-slider{
+  width: 66%;
+  margin: auto;
+/*  min-width: 10em;
+  min-height: 50vh;*/
+  margin-top: -1em;
+  background: lightgrey;
+  /*animation: map-slider 1s;*/
+/*  border: 1em dotted red;*/
+}
+.map-slider iframe{
+  text-align: center;
+  width: 100%;
+  animation: map-slider 1s;
+  height: 30vh;
+
+}
