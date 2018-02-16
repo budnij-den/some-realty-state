@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./map.component.css']
 })
 export class MapComponent {
-  toggled:boolean=false;
+  toggled:boolean;
   textTogglerMap:string='show map';
 
   toggleMap(){

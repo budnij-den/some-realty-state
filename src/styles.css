@@ -32,9 +32,14 @@ body {
   padding: 1em .3em;
   margin-right: 1em;
 }
+@keyframes menu-link-background-animation {
+  from {background: inherit;}
+  to {background: white;}
+}
 .menu-link-list li:hover{
+  animation: menu-link-background-animation .3s;
   background: white;
-/*  border-radius: 5em;*/
+  border-radius: 1em;
 }
 .menu-link-list li a, .menu-link-list li a:hover{
   text-decoration: none;
@@ -45,10 +50,5 @@ body {
 .menu-link-list li:hover a{
   color:saddlebrown;
 }
-.content{
-  padding: 1em;
-  margin-bottom: 2em;
-  background-color: rgb(250,250,250);
-  border-radius: 1em;
-}
+
 

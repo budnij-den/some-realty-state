@@ -1,0 +1,19 @@
+.content{
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: rgb(250,250,250);
+  border-radius: 1em;
+}
+i {
+  font-size: 3em;
+}
+.item-toggled{
+  width: 30%;
+  border: 1px dotted black;
+  background: yellow;
+}
+.tile-header{
+  display: inline;
+  min-height: 3em;
+  padding: 1em;
+}

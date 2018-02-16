@@ -15,49 +15,73 @@
 
 
   <div class="content">
-    <div class="tile about">
-      <blockquote class="blockquote">Some RE is a steadily growing company which concentrates on the quality of its service.</blockquote>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat ipsum eu eros lobortis, in ultrices ligula vestibulum. Duis tempus quam nec porta malesuada. Donec convallis sem diam, id cursus dolor ornare vitae. Nam bibendum ultricies orci a vehicula. Donec vel lorem sem. Pellentesque ut massa tempor, tempus lectus eu, ultrices diam. Donec nec sapien non nunc facilisis vestibulum. Donec gravida pharetra ligula ultrices commodo.</p>
+    <ul>
+    
+    <li>
+    <div class="tile about"  [ngClass]="{itemToggled :'item-toggled'}"  (click)="itemToggler();">
+    <div>
+      <i class="fas fa-lightbulb"></i>
+      <h4 class="tile-header">SRS is a steadily growing company which concentrates on the quality of its service.</h4>
+    </div>
+      <div *ngIf="itemToggled">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat ipsum eu eros lobortis, in ultrices ligula vestibulum. Duis tempus quam nec porta malesuada. Donec convallis sem diam, id cursus dolor ornare vitae. Nam bibendum ultricies orci a vehicula. Donec vel lorem sem. Pellentesque ut massa tempor, tempus lectus eu, ultrices diam. Donec nec sapien non nunc facilisis vestibulum. Donec gravida pharetra ligula ultrices commodo.</p>
 
-      <p>Suspendisse vitae dui in arcu accumsan lacinia vel sed nunc. Ut viverra venenatis nunc, non ultricies leo congue eu. Integer volutpat sed dui at lacinia. Cras at rutrum leo. Vestibulum ultrices justo non urna laoreet consequat. Maecenas non augue facilisis, consequat dolor nec, vehicula mauris. Aliquam accumsan mollis libero, in imperdiet libero laoreet in. Cras et sollicitudin ligula. Duis condimentum nunc eget ultrices luctus. Curabitur fringilla lacus eu diam sodales auctor. Vivamus sed mollis augue.</p>
+        <p>Suspendisse vitae dui in arcu accumsan lacinia vel sed nunc. Ut viverra venenatis nunc, non ultricies leo congue eu. Integer volutpat sed dui at lacinia. Cras at rutrum leo. Vestibulum ultrices justo non urna laoreet consequat. Maecenas non augue facilisis, consequat dolor nec, vehicula mauris. Aliquam accumsan mollis libero, in imperdiet libero laoreet in. Cras et sollicitudin ligula. Duis condimentum nunc eget ultrices luctus. Curabitur fringilla lacus eu diam sodales auctor. Vivamus sed mollis augue.</p>
 
-     <p>Nulla nec libero vitae lacus rutrum vestibulum. Phasellus vitae malesuada lorem, nec cursus nisi. Nullam sollicitudin odio sit amet tellus suscipit sollicitudin. Sed condimentum tellus interdum felis sodales, id malesuada mi ornare. Pellentesque eget fermentum quam, sed malesuada dui. In convallis turpis massa, a sagittis neque egestas eu. Maecenas tellus elit, imperdiet at ante sit amet, convallis commodo sapien. Nunc ultrices nulla eu ultrices rhoncus. Ut orci ex, accumsan eu metus at, dapibus dignissim ligula. Curabitur dignissim mi id vehicula dignissim. Nunc at nunc ornare lectus faucibus ultrices. Proin interdum ligula at neque accumsan, eu volutpat orci suscipit. Cras vel neque non odio mollis facilisis vitae id elit.</p>
+       <p>Nulla nec libero vitae lacus rutrum vestibulum. Phasellus vitae malesuada lorem, nec cursus nisi. Nullam sollicitudin odio sit amet tellus suscipit sollicitudin. Sed condimentum tellus interdum felis sodales, id malesuada mi ornare. Pellentesque eget fermentum quam, sed malesuada dui. In convallis turpis massa, a sagittis neque egestas eu. Maecenas tellus elit, imperdiet at ante sit amet, convallis commodo sapien. Nunc ultrices nulla eu ultrices rhoncus. Ut orci ex, accumsan eu metus at, dapibus dignissim ligula. Curabitur dignissim mi id vehicula dignissim. Nunc at nunc ornare lectus faucibus ultrices. Proin interdum ligula at neque accumsan, eu volutpat orci suscipit. Cras vel neque non odio mollis facilisis vitae id elit.</p>
 
      <p>Duis neque metus, rhoncus quis cursus nec, malesuada quis velit. Praesent eu hendrerit metus. Morbi eget ullamcorper libero, et tincidunt orci. Sed in dolor at augue sagittis auctor. Aenean faucibus bibendum elementum. Sed sit amet dictum nulla. Curabitur id quam justo. Vestibulum lorem mauris, volutpat non rutrum quis, gravida quis sapien. Ut imperdiet eget risus a sagittis. Mauris sit amet turpis tempus augue porta faucibus. Sed ac mattis tellus. Pellentesque ac tortor fringilla, cursus est non, fringilla arcu. Morbi a tempor arcu. Sed vulputate semper placerat.</p>
 
       <p>Quisque id dui est. In sollicitudin quis orci at lobortis. Nullam eget maximus mi, a interdum nisl. Phasellus molestie tellus in rutrum commodo. Cras vestibulum, metus et tempus aliquam, est lectus aliquet nunc, et auctor nisl justo a mi. Vestibulum sed quam urna. Sed dignissim eu risus vel suscipit. Proin id nisi nec enim faucibus pretium quis eu metus. Nam gravida, ipsum vitae rhoncus malesuada, odio justo vestibulum quam, nec bibendum ipsum enim ac dolor. Nam nec diam venenatis, ultricies eros sit amet, gravida dui. Suspendisse felis nisl, pretium ultricies dolor in, consectetur gravida velit. Ut at faucibus velit, vel consectetur nisi.</p>
     </div>
+    </div>
+    </li>
 
-
-    <div class="tile mortgage">
+    <li>
+    <div class="tile mortgage" [ngClass]="{itemToggled :'item-toggled'}"  (click)="itemToggler();">
       <a name="mortgage"></a>
-      <blockquote class="blockquote">mortgage stab</blockquote>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sem dolor, ullamcorper non odio id, sollicitudin blandit libero. Aenean hendrerit sit amet metus feugiat sagittis. In hac habitasse platea dictumst. Nam facilisis at purus eu consectetur. Donec aliquam sagittis justo, in placerat nulla ornare eu. Donec a pellentesque nisi. Proin id purus ac magna rhoncus tincidunt.</p>
+      <i class="fas fa-home"></i>
+      <h4 >mortgage stab</h4>
+      <div *ngIf="itemToggled">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sem dolor, ullamcorper non odio id, sollicitudin blandit libero. Aenean hendrerit sit amet metus feugiat sagittis. In hac habitasse platea dictumst. Nam facilisis at purus eu consectetur. Donec aliquam sagittis justo, in placerat nulla ornare eu. Donec a pellentesque nisi. Proin id purus ac magna rhoncus tincidunt.</p>
 
-      <p>Duis mollis leo quis lorem condimentum dapibus. Vestibulum congue, tortor at tincidunt ultricies, ex turpis mollis lectus, eget volutpat elit justo tempus mi. Duis luctus magna et quam malesuada ultricies. Maecenas gravida, nulla vel laoreet imperdiet, turpis purus accumsan nibh, sed viverra enim tortor vitae dui. Cras interdum dignissim accumsan. Vestibulum eleifend felis vel rhoncus rhoncus. Morbi consequat molestie metus eget finibus. Integer ultricies imperdiet pharetra. Nulla et pretium purus, ac consequat felis. Duis nec fermentum mauris. Sed lobortis quam sed nulla finibus, ac elementum enim laoreet. Donec vel quam urna.</p>
+        <p>Duis mollis leo quis lorem condimentum dapibus. Vestibulum congue, tortor at tincidunt ultricies, ex turpis mollis lectus, eget volutpat elit justo tempus mi. Duis luctus magna et quam malesuada ultricies. Maecenas gravida, nulla vel laoreet imperdiet, turpis purus accumsan nibh, sed viverra enim tortor vitae dui. Cras interdum dignissim accumsan. Vestibulum eleifend felis vel rhoncus rhoncus. Morbi consequat molestie metus eget finibus. Integer ultricies imperdiet pharetra. Nulla et pretium purus, ac consequat felis. Duis nec fermentum mauris. Sed lobortis quam sed nulla finibus, ac elementum enim laoreet. Donec vel quam urna.</p>
 
-      <p>Pellentesque sit amet volutpat erat. Sed quis diam justo. Fusce a tempus tellus. Sed ac risus ut sapien rhoncus bibendum et vel ante. Nullam elementum sem sed diam consequat pretium. Nulla a nisl elit. Pellentesque id bibendum metus, nec venenatis mauris. Vestibulum pulvinar, elit eu feugiat dictum, urna augue accumsan nisl, vel tempor lorem ante vitae arcu. Duis iaculis imperdiet justo eget egestas. In malesuada, est eget aliquet rutrum, velit quam aliquet dui, in blandit dui magna ac justo.</p>
+        <p>Pellentesque sit amet volutpat erat. Sed quis diam justo. Fusce a tempus tellus. Sed ac risus ut sapien rhoncus bibendum et vel ante. Nullam elementum sem sed diam consequat pretium. Nulla a nisl elit. Pellentesque id bibendum metus, nec venenatis mauris. Vestibulum pulvinar, elit eu feugiat dictum, urna augue accumsan nisl, vel tempor lorem ante vitae arcu. Duis iaculis imperdiet justo eget egestas. In malesuada, est eget aliquet rutrum, velit quam aliquet dui, in blandit dui magna ac justo.</p>
+      </div>
     </div>
+    </li>
 
-    <div class="tile services">
+    <li>
+    <div class="tile services"  [ngClass]="{itemToggled :'item-toggled'}"  (click)="itemToggler();">
       <a name="services"></a>
-      <blockquote class="blockquote">services stab</blockquote>
+      <i class="fas fa-wrench"></i>
+      <h4>services stab</h4>
+      <div *ngIf="itemToggled">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sem dolor, ullamcorper non odio id, sollicitudin blandit libero. Aenean hendrerit sit amet metus feugiat sagittis. In hac habitasse platea dictumst. Nam facilisis at purus eu consectetur. Donec aliquam sagittis justo, in placerat nulla ornare eu. Donec a pellentesque nisi. Proin id purus ac magna rhoncus tincidunt.</p>
 
       <p>Duis mollis leo quis lorem condimentum dapibus. Vestibulum congue, tortor at tincidunt ultricies, ex turpis mollis lectus, eget volutpat elit justo tempus mi. Duis luctus magna et quam malesuada ultricies. Maecenas gravida, nulla vel laoreet imperdiet, turpis purus accumsan nibh, sed viverra enim tortor vitae dui. Cras interdum dignissim accumsan. Vestibulum eleifend felis vel rhoncus rhoncus. Morbi consequat molestie metus eget finibus. Integer ultricies imperdiet pharetra. Nulla et pretium purus, ac consequat felis. Duis nec fermentum mauris. Sed lobortis quam sed nulla finibus, ac elementum enim laoreet. Donec vel quam urna.</p>
 
       <p>Pellentesque sit amet volutpat erat. Sed quis diam justo. Fusce a tempus tellus. Sed ac risus ut sapien rhoncus bibendum et vel ante. Nullam elementum sem sed diam consequat pretium. Nulla a nisl elit. Pellentesque id bibendum metus, nec venenatis mauris. Vestibulum pulvinar, elit eu feugiat dictum, urna augue accumsan nisl, vel tempor lorem ante vitae arcu. Duis iaculis imperdiet justo eget egestas. In malesuada, est eget aliquet rutrum, velit quam aliquet dui, in blandit dui magna ac justo.</p>
     </div>
+    </div>
+    </li>
 
-    <div class="tile contacts">
+    <li>
+      <div class="tile contacts"  [ngClass]="{itemToggled :'item-toggled'}" (click)="itemToggler();">
       <a name="contacts"></a>
-      <blockquote class="blockquote">contacts stab</blockquote>
+      <i class="fas fa-envelope"></i>
+      <h4>contacts stab</h4>
+      <div *ngIf="itemToggled">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sem dolor, ullamcorper non odio id, sollicitudin blandit libero. Aenean hendrerit sit amet metus feugiat sagittis. In hac habitasse platea dictumst. Nam facilisis at purus eu consectetur. Donec aliquam sagittis justo, in placerat nulla ornare eu. Donec a pellentesque nisi. Proin id purus ac magna rhoncus tincidunt.</p>
 
       <p>Duis mollis leo quis lorem condimentum dapibus. Vestibulum congue, tortor at tincidunt ultricies, ex turpis mollis lectus, eget volutpat elit justo tempus mi. Duis luctus magna et quam malesuada ultricies. Maecenas gravida, nulla vel laoreet imperdiet, turpis purus accumsan nibh, sed viverra enim tortor vitae dui. Cras interdum dignissim accumsan. Vestibulum eleifend felis vel rhoncus rhoncus. Morbi consequat molestie metus eget finibus. Integer ultricies imperdiet pharetra. Nulla et pretium purus, ac consequat felis. Duis nec fermentum mauris. Sed lobortis quam sed nulla finibus, ac elementum enim laoreet. Donec vel quam urna.</p>
 
       <p>Pellentesque sit amet volutpat erat. Sed quis diam justo. Fusce a tempus tellus. Sed ac risus ut sapien rhoncus bibendum et vel ante. Nullam elementum sem sed diam consequat pretium. Nulla a nisl elit. Pellentesque id bibendum metus, nec venenatis mauris. Vestibulum pulvinar, elit eu feugiat dictum, urna augue accumsan nisl, vel tempor lorem ante vitae arcu. Duis iaculis imperdiet justo eget egestas. In malesuada, est eget aliquet rutrum, velit quam aliquet dui, in blandit dui magna ac justo.</p>
+      </div>
+    </div>
+    </li>
+    </ul>
     </div>
   </div>
 
-</div>
