@@ -8,12 +8,34 @@ i {
   font-size: 3em;
 }
 .item-toggled{
-  width: 30%;
-  border: 1px dotted black;
-  background: yellow;
 }
 .tile-header{
-  display: inline;
-  min-height: 3em;
+  border: 1px dotted grey;
+  border-radius: 20%;
   padding: 1em;
+  height: 7em;
+}
+.tile-header:hover{
+  background-color: dimgrey;
+}
+.tile-header i{
+  position: relative;
+  left:0;
+  float: left;
+  font-size: 5em;
+  display: inline-block;
+/*  border: 1px dotted green;*/
+}
+.tile-header h4{
+  display: inline;
+  margin-left: 1em;
+}
+.content{
+  text-align: center;
+}
+.content ul li{
+  width: 33vw;
+  display: inline-block;
+  list-style: none;
+  margin: 0 1em 1em 0;
 }

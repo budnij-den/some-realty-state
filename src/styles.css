@@ -37,7 +37,7 @@ body {
   to {background: white;}
 }
 .menu-link-list li:hover{
-  animation: menu-link-background-animation .3s;
+  animation: menu-link-background-animation .3s linear;
   background: white;
   border-radius: 1em;
 }

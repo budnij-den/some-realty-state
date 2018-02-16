@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class AppComponent {
 
-  itemToggled:boolean=false;
+  itemToggled:boolean;
   itemToggler(){
     this.itemToggled = !this.itemToggled;
   }
